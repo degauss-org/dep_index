@@ -1,0 +1,8 @@
+# ignore everything
+**
+
+# except what we need
+!/renv.lock
+!/tracts_2010_sf_5072.rds
+!/tract_dep_index_2018.rds
+!/dep_index.R

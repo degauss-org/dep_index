@@ -1,4 +1,4 @@
-# dep_index <a href='https://degauss-org.github.io/DeGAUSS/'><img src='https://github.com/degauss-org/degauss_template/blob/master/DeGAUSS_hex.png' align='right' height='138.5' /></a>
+# dep_index <a href='https://degauss-org.github.io/DeGAUSS/'><img src='DeGAUSS_hex.png' align='right' height='138.5' /></a>
 
 > DeGAUSS container that adds census tract deprivation index to [geocoded](https://degauss.org/geocoder) addresses
 

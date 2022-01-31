@@ -1,5 +1,16 @@
 FROM rocker/r-ver:4.0.4
 
+# DeGAUSS container metadata
+ENV degauss_name="dep_index"
+ENV degauss_version="0.1"
+ENV degauss_description="census tract-level deprivation index"
+
+# add OCI labels based on environment variables too
+LABEL "org.degauss.name"="${degauss_name}"
+LABEL "org.degauss.version"="${degauss_version}"
+LABEL "org.degauss.description"="${degauss_description}"
+LABEL "org.degauss.argument"="${degauss_argument}"
+
 # ADD https://geomarker.s3.us-east-2.amazonaws.com/geometries/tracts_2010_sf_5072.rds /opt/tracts_2010_sf_5072.rds
 # ADD https://geomarker.s3.us-east-2.amazonaws.com/tract_dep_index_2018.rds /opt/tract_dep_index_18.rds
 

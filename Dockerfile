@@ -2,7 +2,7 @@ FROM rocker/r-ver:4.0.5
 
 # DeGAUSS container metadata
 ENV degauss_name="dep_index"
-ENV degauss_version="0.2.0"
+ENV degauss_version="0.2.1"
 ENV degauss_description="census tract-level deprivation index"
 
 # add OCI labels based on environment variables too

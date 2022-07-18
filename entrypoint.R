@@ -37,6 +37,7 @@ dep_index18 <- readRDS('/opt/tract_dep_index_18.rds')
 
 message("joining 2018 tract-level deprivation index")
 d_tract <- left_join(d_tract, dep_index18, by = c('fips_tract_id' = 'census_tract_fips'))
+d_tract <- rename(d_tract, census_tract_id = fips_tract_id)
 
 ## merge back on .row after unnesting .rows into .row
 dht::write_geomarker_file(d = d_tract,

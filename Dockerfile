@@ -2,7 +2,7 @@ FROM rocker/r-ver:4.0.5
 
 # DeGAUSS container metadata
 ENV degauss_name="dep_index"
-ENV degauss_version="0.2.1"
+ENV degauss_version="0.2.2"
 ENV degauss_description="census tract-level deprivation index"
 
 # add OCI labels based on environment variables too
@@ -29,8 +29,8 @@ COPY renv.lock .
 
 RUN R --quiet -e "renv::restore(repos = c(CRAN = 'https://packagemanager.rstudio.com/all/__linux__/focal/latest'))"
 
-ADD https://geomarker.s3.us-east-2.amazonaws.com/geometries/tracts_2010_sf_5072.rds /opt/tracts_2010_sf_5072.rds
-ADD https://geomarker.s3.us-east-2.amazonaws.com/tract_dep_index_2018.rds /opt/tract_dep_index_18.rds
+ADD https://github.com/degauss-org/dep_index/releases/download/0.2.1/tracts_2010_sf_5072.rds /opt/tracts_2010_sf_5072.rds
+ADD https://github.com/degauss-org/dep_index/releases/download/0.2.1/tract_dep_index_2018.rds /opt/tract_dep_index_18.rds
 COPY entrypoint.R .
 
 WORKDIR /tmp

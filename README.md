@@ -34,8 +34,7 @@ For more information on the deprivation index, please see the [deprivation index
 
 ## Geomarker Data
 
-- 2010 tract shape files are stored at: [`s3://geomarker/geometries/tracts_2010_sf_5072.rds`](https://geomarker.s3.us-east-2.amazonaws.com/geometries/tracts_2010_sf_5072.rds).
-- 2018 deprivation index data is stored at: [`s3://geomarker/tract_dep_index_2018.rds`](https://geomarker.s3.us-east-2.amazonaws.com/tract_dep_index_2018.rds) and is also available for download at [https://geomarker.io/dep_index/](https://geomarker.io/dep_index/).
+2010 tract shape files and 2018 deprivation index data are stored as versioned GitHub release assets
 
 ## DeGAUSS Details
 
